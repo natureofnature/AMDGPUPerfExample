@@ -1,0 +1,30 @@
+#include "PerformanceCountersAMD.h"
+#include <Windows.h>
+static HINSTANCE hGetProcIDDLL= LoadLibrary("C:\\Users\\nature\\Documents\\Visual Studio 2015\\Projects\\TestAMDPerf\\TestAMDPerf\\Bin\\x86\\GPUPerfAPICL.dll");
+f_GPA_Initialize PerformanceAMD::GPA_Initialize = (f_GPA_Initialize)GetProcAddress(hGetProcIDDLL, "GPA_Initialize");
+f_GPA_BeginSession PerformanceAMD::GPA_BeginSession = (f_GPA_BeginSession)GetProcAddress(hGetProcIDDLL, "GPA_BeginSession");
+f_GPA_GetNumCounters PerformanceAMD::GPA_GetNumCounters = (f_GPA_GetNumCounters)GetProcAddress(hGetProcIDDLL, "GPA_GetNumCounters");
+f_GPA_GetCounterName  PerformanceAMD::GPA_GetCounterName = (f_GPA_GetCounterName)GetProcAddress(hGetProcIDDLL, "GPA_GetCounterName");
+f_GPA_GetCounterIndex PerformanceAMD::GPA_GetCounterIndex = (f_GPA_GetCounterIndex)GetProcAddress(hGetProcIDDLL, "GPA_GetCounterIndex");
+f_GPA_GetCounterDescription PerformanceAMD::GPA_GetCounterDescription = (f_GPA_GetCounterDescription)GetProcAddress(hGetProcIDDLL, "GPA_GetCounterDescription");
+f_GPA_EnableCounter PerformanceAMD::GPA_EnableCounter = (f_GPA_EnableCounter)GetProcAddress(hGetProcIDDLL, "GPA_EnableCounter");
+f_GPA_GetPassCount PerformanceAMD::GPA_GetPassCount = (f_GPA_GetPassCount)GetProcAddress(hGetProcIDDLL, "GPA_GetPassCount");
+f_GPA_BeginPass PerformanceAMD::GPA_BeginPass = (f_GPA_BeginPass)GetProcAddress(hGetProcIDDLL, "GPA_BeginPass");
+f_GPA_BeginSample PerformanceAMD::GPA_BeginSample = (f_GPA_BeginSample)GetProcAddress(hGetProcIDDLL, "GPA_BeginSample");
+f_GPA_EndSample PerformanceAMD::GPA_EndSample = (f_GPA_EndSample)GetProcAddress(hGetProcIDDLL, "GPA_EndSample");
+f_GPA_EndPass PerformanceAMD::GPA_EndPass = (f_GPA_EndPass)GetProcAddress(hGetProcIDDLL, "GPA_EndPass");
+f_GPA_EndSession PerformanceAMD::GPA_EndSession = (f_GPA_EndSession)GetProcAddress(hGetProcIDDLL, "GPA_EndSession");
+f_GPA_IsSessionReady PerformanceAMD::GPA_IsSessionReady = (f_GPA_IsSessionReady)GetProcAddress(hGetProcIDDLL, "GPA_IsSessionReady");
+f_GPA_GetCounterDataType PerformanceAMD::GPA_GetCounterDataType = (f_GPA_GetCounterDataType)GetProcAddress(hGetProcIDDLL, "GPA_GetCounterDataType");
+f_GPA_GetCounterUsageType PerformanceAMD::GPA_GetCounterUsageType = (f_GPA_GetCounterUsageType)GetProcAddress(hGetProcIDDLL, "GPA_GetCounterUsageType");
+f_GPA_GetSampleUInt32 PerformanceAMD::GPA_GetSampleUInt32 = (f_GPA_GetSampleUInt32)GetProcAddress(hGetProcIDDLL, "GPA_GetSampleUInt32");
+f_GPA_GetSampleUInt64 PerformanceAMD::GPA_GetSampleUInt64 = (f_GPA_GetSampleUInt64)GetProcAddress(hGetProcIDDLL, "GPA_GetSampleUInt64");
+f_GPA_GetSampleFloat32 PerformanceAMD::GPA_GetSampleFloat32 = (f_GPA_GetSampleFloat32)GetProcAddress(hGetProcIDDLL, "GPA_GetSampleFloat32");
+f_GPA_GetSampleFloat64 PerformanceAMD::GPA_GetSampleFloat64 = (f_GPA_GetSampleFloat64)GetProcAddress(hGetProcIDDLL, "GPA_GetSampleFloat64");
+f_GPA_CloseContext PerformanceAMD::GPA_CloseContext = (f_GPA_CloseContext)GetProcAddress(hGetProcIDDLL, "GPA_CloseContext");
+f_GPA_Destroy PerformanceAMD::GPA_Destroy = (f_GPA_Destroy)GetProcAddress(hGetProcIDDLL, "GPA_Destroy");
+f_GPA_OpenContext PerformanceAMD::GPA_OpenContext = (f_GPA_OpenContext)GetProcAddress(hGetProcIDDLL, "GPA_OpenContext");
+f_GPA_DisableCounter PerformanceAMD::GPA_DisableCounter = (f_GPA_DisableCounter)GetProcAddress(hGetProcIDDLL, "GPA_DisableCounter");
+f_GPA_DisableAllCounters PerformanceAMD::GPA_DisableAllCounters = (f_GPA_DisableAllCounters)GetProcAddress(hGetProcIDDLL, "GPA_DisableAllCounters");
+f_GPA_EnableAllCounters PerformanceAMD::GPA_EnableAllCounters = (f_GPA_EnableAllCounters)GetProcAddress(hGetProcIDDLL, "GPA_EnableAllCounters");
+f_GPA_DisableCounterStr PerformanceAMD::GPA_DisableCounterStr = (f_GPA_DisableCounterStr)GetProcAddress(hGetProcIDDLL, "f_GPA_DisableCounterStr");

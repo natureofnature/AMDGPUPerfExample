@@ -1,0 +1,12 @@
+﻿  PerformanceCountersAMD.cpp
+  main_singleThread.cpp
+c:\users\nature\documents\visual studio 2015\projects\amdgpuperfexample\testamdperf\main_singlethread.cpp(67): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\nature\documents\visual studio 2015\projects\amdgpuperfexample\testamdperf\main_singlethread.cpp(217): warning C4018: '<': signed/unsigned mismatch
+c:\users\nature\documents\visual studio 2015\projects\amdgpuperfexample\testamdperf\main_singlethread.cpp(335): warning C4244: 'initializing': conversion from 'cl_ulong' to 'int', possible loss of data
+c:\users\nature\documents\visual studio 2015\projects\amdgpuperfexample\testamdperf\main_singlethread.cpp(336): warning C4244: 'initializing': conversion from 'cl_ulong' to 'int', possible loss of data
+c:\users\nature\documents\visual studio 2015\projects\amdgpuperfexample\testamdperf\main_singlethread.cpp(337): warning C4244: 'initializing': conversion from 'cl_ulong' to 'int', possible loss of data
+c:\users\nature\documents\visual studio 2015\projects\amdgpuperfexample\testamdperf\main_singlethread.cpp(338): warning C4244: 'initializing': conversion from 'cl_ulong' to 'int', possible loss of data
+c:\users\nature\documents\visual studio 2015\projects\amdgpuperfexample\testamdperf\main_singlethread.cpp(205): warning C4101: 'pAMD': unreferenced local variable
+  Generating Code...
+  TestAMDPerf.vcxproj -> C:\Users\nature\Documents\Visual Studio 2015\Projects\AMDGPUPerfExample\Debug\TestAMDPerf.exe
+  TestAMDPerf.vcxproj -> C:\Users\nature\Documents\Visual Studio 2015\Projects\AMDGPUPerfExample\Debug\TestAMDPerf.pdb (Partial PDB)
